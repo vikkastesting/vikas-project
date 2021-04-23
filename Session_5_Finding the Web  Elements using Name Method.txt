@@ -1,0 +1,30 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FindByXpath 
+
+{
+	
+public static void main(String[] args) 
+
+
+{
+	
+System.setProperty("webdriver.chrome.driver", "E:\\Vikas Testing Notes\\Selenium Files\\chromedriver.exe");
+
+WebDriver driver= new ChromeDriver();
+
+driver.get("http://ppshadapsar.ppctschools.com");
+
+driver.manage().window().maximize();
+
+driver.findElement(By.name("txtUserName")).sendKeys("13622");
+
+driver.findElement(By.name("txtPassword")).sendKeys("Arnavikas@2011");
+
+driver.findElement(By.name("btnLogin")).click();
+
+}	
+
+}
